@@ -1,0 +1,24 @@
+<hr>
+<h1> Crie novo evento </h1>
+<div class="nested-fields">
+  <div class="field">
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+    
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+    
+  <%= f.label :data %>
+  <%= f.text_field :data %>
+    
+  <%= f.label :status %>
+  <%= f.text_field :status %>
+    
+  <%= f.label :contratante %>
+  <%= f.text_field :contratante %>
+
+  <%= link_to_remove_association('[Remove]', f) %>
+
+  </div>
+</div>

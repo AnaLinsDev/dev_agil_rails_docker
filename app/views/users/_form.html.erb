@@ -26,6 +26,14 @@
     <%= form.text_field :password %>
   </div>
 
+  <div id="events">
+    <%= form.fields_for :events do |events_fields| %>
+      <%= render partial: "event_fields", locals: {f: events_fields} %>
+    <% end %>
+
+    <%= link_to_add_association('[Novo Evento]', form, :events) %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
